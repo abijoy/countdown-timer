@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <style>
+      body {
+        /* text-align: center; */
+      }
+      .timer {
+        margin: auto;
+        margin-top: 30px;
+        padding: 3px 10px;
+        border-radius: 0.5em;
+        box-shadow: -1px 1px 4px 4px rgba(0, 0, 0, 0.2);
+        height: 600px;
+        width: 350px;
+        font-weight: bold;
+      }
+      .countdown-container {
+        background-color:rgb(250, 242, 233);
+        padding: 20px;
+        padding-bottom: 35px;
+        margin: auto;
+        border-radius: 0.3em;
+        box-shadow: -1px 1px 3px 3px rgba(0, 0, 0, 0.2);
+        /* height: 200px; */
+      }
+      .timer-container {
+        display: flex;
+      }
+      .digit {
+        margin-right: 5px;
+        padding: 5px 10px;
+        background-color: green;
+        border: 1px solid green;
+        color: white;
+        font-size: 70px;
+      }
+
+      .digit1 {
+        margin-right: 8px;
+        font-size: 70px;
+      }
+      .pp {
+        cursor: pointer;
+        margin-left: 60px;
+        float: left;
+      }
+      .control-icon {
+          height: 60px;
+          width: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="timer">
+        <h3>Time of Timer goes here</h3>
+        <div class="countdown-container">
+            
+            <div class="timer-container">
+                <div class="digit">03</div>
+                <div class="digit">4</div>
+                <div class="digit1">:</div>
+                <div class="digit">3</div>
+                <div class="digit">2</div>
+            </div>
+            <br/>
+
+            <!-- controls -->
+            <div class="controls">
+                <div class="pp">
+                    <img class="control-icon" src="../SVG-Icons/Play.svg">
+                    <figcaption>Play</figcaption>
+                </div>
+
+                <div class="pp">
+                    <img class="control-icon" src="../SVG-Icons/cancel.svg">
+                    <figcaption>Cancel</figcaption>
+                </div>
+            </div>
+            <br><br><br>
+        </div>
+        <h4>About this timer:</h4>
+        <ul>
+            <li>Counting down from <span id="timer-limit">5:00</span></li>
+            <li>No green or yellow indicators</li>
+            <li>Visible only to host</li>
+        </ul>
+    </div>
+  </body>
+</html>
